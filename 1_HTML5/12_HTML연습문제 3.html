@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12_HTML 연습문제3</title>
+
+
+</head>
+
+<body>
+
+  <h2>회원가입</h2>
+
+  <form>
+    <fieldset>
+      <legend>필수 입력 정보</legend>
+      <table>
+        <tr>
+          <th>ID</th>
+          <td>
+            <input type="text" placeholder="아이디 10글자 이내">
+            <button type="button">중복확인</button>
+          </td>
+        </tr>
+        <tr>
+          <th>비밀번호</th>
+          <td><input type="password" placeholder="영문,숫자,특수문자 포함 8자 이상" style="width:230px;"></td>
+        </tr>
+        <tr>
+          <th>비밀번호 확인</th>
+          <td><input type="password" style="width:230px;"></td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td>
+            <input type="text" style="width:130px;"> @
+            <select id="emailSelect">
+              <option value="">선택</option>
+              <option value="naver.com">naver.com</option>
+              <option value="gmail.com">gmail.com</option>
+              <option value="daum.net">daum.net</option>
+              <option value="self">직접입력</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+  </form>
+  <br>
+
+  <fieldset>
+    <legend>추가 입력 정보</legend>
+
+    <table>
+
+      <tr>
+        <td>프로필 사진</td>
+        <td>
+          <input type="file">
+          <button style="visibility:hidden;">버튼</button>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>성별</td>
+        <td>
+          남 <input type="radio" name="gender">
+          여 <input type="radio" name="gender">
+        </td>
+      </tr>
+
+      <tr>
+        <td>생년월일</td>
+        <td>
+          <input type="date" name="생년월일">
+        </td>
+      </tr>
+
+      <tr>
+        <td>취미</td>
+        <td>
+          야구 <input type="checkbox">
+          농구 <input type="checkbox">
+          축구 <input type="checkbox"> <br>
+          공부 <input type="checkbox" checked>
+          음악감상 <input type="checkbox"> <br>
+          기타 <input type="text" name="기타 사항 내용">
+        </td>
+      </tr>
+
+
+     <tr>
+      <td>자기소개</td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <textarea rows="5" style="width:98%; resize:none;" placeholder="자기소개를 작성하세요"></textarea>
+      </td>
+    </tr>
+    </table>
+  </fieldset>
+
+
+
+  <button type="submit">회원가입</button>
+  <button>다시입력</button>
+  <button>이전으로</button>
+
+</body>
+
+</html>
