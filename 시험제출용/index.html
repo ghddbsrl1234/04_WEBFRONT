@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>개발자 자기소개 | 홍윤기 포트폴리오</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://webfontworld.github.io/Cafe24Ssurround/Cafe24Ssurround.css" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth; 
+    }
+  </style>
+</head>
+
+<body id="top"> 
+  <header class="site-header">
+    <div class="logo-area">
+      <h1 class="site-title">Junior Web Developer 홍윤기</h1>
+      <p class="site-subtitle">Clean Code · Problem Solving · 성장형 개발자</p>
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education-skills">Education & Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section about-section">
+      <header class="section-header">
+        <h2>About Me</h2>
+      </header>
+
+      <div class="about-content">
+        <article class="about-text">
+          <h3>안녕하세요, 열심히 노력하며 성장중인 개발자입니다.</h3>
+          <p>
+            사용자 경험을 생각하며 코드를 작성하는 개발자
+            <strong>홍윤기</strong>입니다. 탄탄한 기초, 깔끔한 구조, 협업 가능한 코드를
+            목표로 HTML, CSS, Java, DB, Git 등을 꾸준히 학습하고 있습니다.
+          </p>
+          <p>
+            새로운 기술을 두려워하지 않고, 기술의 동작하는 이유를 끝까지 파고드는
+            타입입니다. 작은 기능도 이유를 알고 구현하는 개발자가 되고자 합니다.
+          </p>
+        </article>
+
+        <div class="about-images">
+          <figure>
+            <img src="../images/bomberman.png" alt="홍윤기를 상징하는 캐릭터">
+            <figcaption>My Symbol</figcaption>
+          </figure>
+          <figure>
+            <img src="../images/해리포터2.webp" alt="나의 마인드를 상징하는 이미지">
+            <figcaption>Challenge</figcaption>
+          </figure>
+          <figure>
+            <img src="../images/logo.jpg" alt="KH 정보교육원 로고">
+            <figcaption>KH Info Academy</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="education-skills" class="section edu-skill-section">
+      <header class="section-header">
+        <h2>Education & Skills</h2>
+      </header>
+
+      <div class="edu-skill-layout">
+        <article class="education">
+          <h3>교육 및 학력 사항</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>기간</th>
+                <th>기관</th>
+                <th>전공 / 과정</th>
+                <th>비고</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2025.01 - 2025.10</td>
+                <td>KH 정보교육원</td>
+                <td>웹 개발(HTML/CSS/JS, Java, DB, JDBC)</td>
+                <td>풀스택 기반 실무 프로젝트 수행</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="skills">
+          <h3>보유 기술 (기술 스택)</h3>
+          <ul>
+            <li><strong>Frontend:</strong> HTML5, CSS3, 시맨틱 마크업</li>
+            <li><strong>Backend (학습중):</strong> Java, JDBC, Servlet 기초</li>
+            <li><strong>Database:</strong> Oracle, 기본/조인/서브쿼리</li>
+            <li><strong>Tools & 협업:</strong> Git/GitHub, VS Code, Eclipse, DBeaver</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <header class="section-header">
+        <h2>Projects</h2>
+      </header>
+
+      <div class="project-list">
+        <article class="project-card">
+          <h3>학원 관리 콘솔 프로그램</h3>
+          <p class="project-role">역할: Java & Oracle 기반 기능 구현</p>
+          <p>
+            학생, 수강 정보 관리 프로그램을 제작하며 JDBC를 활용한 DB 연동, DAO/Service
+            구조, 예외 처리, 트랜잭션 개념을 실습했습니다.
+          </p>
+          <ul class="project-tags">
+            <li>Java</li>
+            <li>JDBC</li>
+            <li>Oracle</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <h3>개발자 자기소개 웹페이지 (현재 페이지)</h3>
+          <p class="project-role">역할: 기획 · 디자인 · 퍼블리싱</p>
+          <p>
+            시맨틱 태그, 내부 링크, 접근성을 고려한 구조 설계를 중심으로 제작한
+            개발자 자기소개 페이지입니다.
+          </p>
+          <ul class="project-tags">
+            <li>HTML5</li>
+            <li>CSS3</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <header class="section-header">
+        <h2>Contact Me</h2>
+      </header>
+
+      <form class="contact-form" method="post" action="#">
+        <div class="form-group">
+          <label for="name">이름</label>
+          <input type="text" id="name" name="name" placeholder="이름을 입력하세요" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">이메일</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">연락처</label>
+          <input type="tel" id="phone" name="phone" placeholder="010-xxxx-xxxxß" required>
+        </div>
+
+        <button type="submit" class="btn-submit">메시지 보내기</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Hong Yoon Gi. All rights reserved.</p>
+  </footer>
+
+  <a href="#top" class="top-btn">▲</a>
+</body>
+</html>
