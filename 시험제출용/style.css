@@ -149,3 +149,154 @@ input, textarea {
 .top-btn:hover {
   background-color: #48cae4;
 }
+body {
+  font-family: 'Cafe24Ssurround', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.site-header {
+  background-color: #006494;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+.site-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+.site-nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.site-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  width: 85%;
+  background: white;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.section-header h2 {
+  color: #006494;
+  border-left: 6px solid #48cae4;
+  padding-left: 10px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.about-images img {
+  width: 240px;
+  border: 3px solid #006494;
+  border-radius: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.project-card {
+  background: #f8fbff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.project-tags li {
+  display: inline-block;
+  background: #48cae4;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.btn-submit {
+  background-color: #006494;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-submit:hover {
+  background-color: #48cae4;
+}
+
+.site-footer {
+  background-color: #003554;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #006494;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+.top-btn:hover {
+  background-color: #48cae4;
+}
