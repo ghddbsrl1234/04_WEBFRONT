@@ -260,6 +260,12 @@ input, textarea {
   border-radius: 4px;
 }
 
+textarea {
+  width: 300px;
+  height: 120px;
+}
+
+
 .btn-submit {
   background-color: #006494;
   color: white;
