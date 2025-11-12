@@ -90,6 +90,6 @@ function cssTest() {
       alert(`${i}번째 요소입니다`);
     }
   }
-asdfsdafasdf
+
   
 }
