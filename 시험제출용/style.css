@@ -253,11 +253,16 @@ th, td {
   margin-right: 5px;
 }
 
-input, textarea {
+textarea {
+  resize: none;
   width: 100%;
-  padding: 8px;
+  height: 150px;
+  padding: 10px;
   border: 1px solid #bbb;
   border-radius: 4px;
+  font-family: 'Cafe24Ssurround';
+  font-size: 14px;
+  box-sizing: border-box;
 }
 
 
