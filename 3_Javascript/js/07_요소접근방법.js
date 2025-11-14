@@ -6,7 +6,7 @@ function classTest() {
   // 배열 전용 기능(함수)를 제공하지 않음.
   // 제공하지 않는 기능 : pop(), push(), map(), filter() 등..
   // HTMLCollection, NodeList 는 유사배열.
-  
+
   // class 속성값이 cls-test인 요소 모두 얻어오기
   const divs = document.getElementsByClassName("cls-test");
 
@@ -23,8 +23,8 @@ function tagNameTest() {
   const tagList = document.getElementsByTagName("li");
   console.log(tagList);
 
-for(let i = 0; i < tagList.length; i++) {
-  tagList[i].style.backgroundColor = tagList[i].innerText;
+  for (let i = 0; i < tagList.length; i++) {
+    tagList[i].style.backgroundColor = tagList[i].innerText;
   }
 }
 
@@ -37,14 +37,14 @@ function nameTest() {
 
   let str = ""; // 체크된 값 누적할 문자열
   let count = 0; // 체크된 수 카운트
-  
-  for(let i=0; i < hobbyList.length; i++){
+
+  for (let i = 0; i < hobbyList.length; i++) {
 
     // checkbox, radio 전용 속성 (checked)
 
     // input요소.checked
     // -> 요소가 체크되있다면 true, 안되었다면 false반환
-    if(hobbyList[i].checked) {
+    if (hobbyList[i].checked) {
       str += hobbyList[i].value + " ";
       count++;
     }
@@ -52,12 +52,12 @@ function nameTest() {
 
   // id가 neme-div 요소에 내용으로 결과 출력
   document.getElementById("name-div").innerHTML
-  = `${str} <br><br>선택된 취미 개수 : ${count}`;
+    = `${str} <br><br>선택된 취미 개수 : ${count}`;
 
   // 요소.innerHTML
   // HTML 태그를 포함하여 작성한 문자열을
   // 실제 HTML 요소로 해석하여 화면에 렌더링함
-  
+
   // 요소.innerText
   // 텍스트 내용만 요소 내부에 출력함(HTML 코드로 해석X)
 
@@ -85,11 +85,65 @@ function cssTest() {
   divList[0].style.fontFamily = "궁서";
   divList[1].style.fontSize = "20px";
 
-  for(let i=0; i < divList.length; i++){
-    divList[i].onclick = function() {
+  for (let i = 0; i < divList.length; i++) {
+    divList[i].onclick = function () {
       alert(`${i}번째 요소입니다`);
+
     }
   }
 
-  
 }
+
+// 카카오톡 채팅 만들기
+function readValue() {
+
+  // 채팅이 출력되는 배경요소
+  const bg = document.querySelector("#chatting-bg");
+
+  // 채팅 내용 입력 input 요소
+  const input = document.querySelector("#user-input");
+
+  // 입력된 값이 없을 경우
+  // 1) 진짜 안적음
+  // 2) 공백만 적음
+
+  // 문자열.trim() : 문자열 좌우 공백 제거
+  if (input.value.trim().length == 0) { // 공백만 입력했는지 확인
+    alert("채팅 내용을 입력해주세요");
+    input.value = ""; // 이전 input에 작성된 값 삭제
+    input.focus(); // input에 커서 활성화
+    return;
+  }
+
+  // 채팅 추가 (innerHTML 사용 가능)
+  bg.innerHTML += `<p><span>${input.value}</span></p>`;
+
+  // bg.scrollTop : 현재 스크롤 위치
+  // 스크롤이 현재 얼마 만큼 내려와있는지 나타냄
+
+  // bg.scrollTop : bg의 스크롤 전체 높이
+  // 스크롤바를 이용해 스크롤 할 수 있는 전체 높이
+  console.log(bg.scrollTop);
+  console.log(bg.scrollHeight);
+
+  // 스크롤 맨 아래로 자동 이동
+  bg.scrollTop = bg.scrollHeight;
+
+  // 입력창 초기화
+  input.value = "";
+  input.focus();
+
+}
+// keydown : 키가 눌러졌을  (+ 꾹 느르고 있으면 계속 인식됨)
+// keyup : 눌러지던 키가 때어졌을 때 (올라왔을 때) (1회 인식)
+document.querySelector("#user-input").addEventListener("keyup", function (e) {
+  // 매개변수 e : 이벤트 객체 (발생한 이벤트 정보를 달고있는 객체)
+  console.log(e);
+
+  // e['key'] -> 매핑된 value
+  // e.key -> 매핑된 value
+  if (e.key === "Enter") {
+    readValue();
+  }
+});
+
