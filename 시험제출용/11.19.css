@@ -1,0 +1,57 @@
+body {
+    padding: 30px;
+    text-align: center;
+    line-height: 1.9;
+}
+
+#optionArea {
+    display: inline-block;
+    text-align: left;
+
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+
+#optionArea > div {
+    margin-bottom: 15px;
+}
+
+#optionArea input[type="number"],
+#optionArea input[type="text"] {
+    padding: 5px 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#contentLine {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.centerArea {
+    text-align: center;
+}
+
+#apply {
+    padding: 7px 22px;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+#result {
+    width: 200px;
+    height: 400px;
+    border: 2px solid black;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    background-color: white;
+}

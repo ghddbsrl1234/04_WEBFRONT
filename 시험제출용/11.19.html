@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025.11.19 시험</title>
+    <link rel="stylesheet" href="../시험제출용/11.19.css">
+</head>
+
+<body>
+
+    <div id="optionArea">
+
+        <div>
+            너비 :
+            <input type="number" id="width" class="sizeInput"> px
+
+            높이 :
+            <input type="number" id="height" class="sizeInput"> px
+        </div>
+
+        <div>
+            글자크기 :
+            <input type="number" id="textSize" class="sizeInput"> px
+
+            굵기 :
+            <label><input type="radio" name="weight" value="normal" checked> 보통</label>
+            <label><input type="radio" name="weight" value="bold"> 굵게</label>
+        </div>
+
+        <div>
+            글자색 :
+            <input type="text" id="textColor">
+
+            배경색 :
+            <input type="text" id="backgroundColor">
+        </div>
+
+        <div>
+            가로정렬 :
+            <label><input type="radio" name="Halig" value="left"> 왼쪽</label>
+            <label><input type="radio" name="Halig" value="center" checked> 가운데</label>
+            <label><input type="radio" name="Halig" value="right"> 오른쪽</label>
+        </div>
+
+        <div>
+            세로정렬 :
+            <label><input type="radio" name="Valig" value="flex-start"> 위</label>
+            <label><input type="radio" name="Valig" value="center" checked> 가운데</label>
+            <label><input type="radio" name="Valig" value="flex-end"> 아래</label>
+        </div>
+
+    </div>
+
+
+    <div id="contentLine">
+        출력 문자열 :
+        <input type="text" id="content" style="width:300px;">
+    </div>
+
+
+    <div class="centerArea">
+        <button id="apply">적용하기</button>
+        <div id="result"></div>
+    </div>
+
+
+    <script src="../시험제출용/11.19.js"></script>
+</body>
+
+</html>
